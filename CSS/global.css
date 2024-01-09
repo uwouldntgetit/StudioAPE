@@ -27,7 +27,7 @@ body {
 
 .typing-animation .text{
     position: relative;
-    color: #4070F4;
+    color: #00ff1e;
     font-size: 30px;
     font-weight: 600;
 }
@@ -53,17 +53,48 @@ body {
     }
 }
 
+
+.text-container {
+    max-width: 800px;
+    padding: 20px;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.price-wrapper {
+    border: 1px solid black;
+    border-radius: 6px;
+
+    max-width: 350px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(135, 255, 135);
+    flex-basis: 50%;
+}
+
 @media(prefers-reduced-motion){
     .text.second-part:before {
         animation: none;
     }
 }
 
-.text-container {
-    max-width: 800px;
-    padding: 20px;
+@media screen and(min-width: 1000px){
+    .text-container {
 
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+
 }
-
