@@ -84,6 +84,15 @@ body {
     flex-basis: 50%;
 }
 
+#front-image-container {
+    /* background-image: url("../images/ape-2015-attestato-prestazione-energetica.asp_Oit_128918-2053638897.webp"); */
+}
+
+#front-image {
+    position:absolute;
+}
+
+
 @media(prefers-reduced-motion){
     .text.second-part:before {
         animation: none;
