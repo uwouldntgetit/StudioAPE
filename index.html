@@ -7,6 +7,7 @@
 
     <!-- File linking -->
     <link href="CSS/global.css" rel="stylesheet">
+    <link href="CSS/front-page.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
@@ -65,6 +66,30 @@
 
 
         </div>
+    </div>
+    <!-- Now I'll create the contact form -->
+    <div id="contact-section">
+        <h1 id="contacts-title">Contatti</h1>
+        <form id="contacts-form" class="flex-container general-container form-container">
+            <div class="basis-half flex-elem">
+                Nome
+                <input name="first-name" type="text" class="flex-elem" required>
+            </div>
+            <div class="flex-elem basis-half">
+                Cognome
+                <input name="last-name" type="text" class="flex-elem" required>
+            </div>
+            <div class="flex-elem">
+                Email
+                <input name="email" type="text" class="flex-elem" required>
+            </div>
+            <div class="flex-elem">
+                Oggetto
+                <input name="subject" type="text" class="flex-elem" required>
+            </div>
+            <textarea placeholder="scrivi il messaggio" class="flex-elem" required></textarea>
+            <button id="submit-button" type="submit">INVIA</button>
+        </form>
     </div>
 
     <footer class="flex-container">

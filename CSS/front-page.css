@@ -1,0 +1,57 @@
+#contact-section {
+    margin: 0px;
+    padding: 50px 10px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #f2f5f6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: center;
+}
+
+.form-container {
+    overflow: hidden;
+    flex-basis: 50%;
+    max-width: 650px;
+
+    row-gap: 50px;
+}
+
+#contacts-title {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.basis-full{
+    flex-grow: 1;
+    flex-basis: 95%;
+}
+
+.flex-elem {
+    flex-grow: 1;
+    flex-basis: 95%;
+}
+
+.basis-half {
+    flex-basis: 45% !important;
+}
+
+div.flex-elem {
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+input.flex-elem {
+    min-height: 35px;
+}
+
+
+#submit-button {
+    height: 60px;
+    width: 160px;
+    color: black;
+    background-color: rgb(135, 255, 135);
+    font-size: 1.2rem;
+}

@@ -21,6 +21,20 @@ body {
     gap: 30px;
 }
 
+/* Front Image */
+#front-image-container {
+    /* background-image: url("../images/ape-2015-attestato-prestazione-energetica.asp_Oit_128918-2053638897.webp"); */
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+#front-image {
+    object-fit: cover;
+    margin-left: auto;
+    margin-top: auto;
+}
+
 .typing-animation{
     overflow: hidden;
 }
@@ -44,14 +58,6 @@ body {
     animation: animate 4s steps(12) infinite;
 }
 
-@keyframes animate{
-    40%, 60%{
-        left: calc(100% + 4px);
-    }
-    100%{
-        left: 0%;
-    }
-}
 
 
 .text-container {
@@ -84,13 +90,6 @@ body {
     flex-basis: 50%;
 }
 
-#front-image-container {
-    /* background-image: url("../images/ape-2015-attestato-prestazione-energetica.asp_Oit_128918-2053638897.webp"); */
-}
-
-#front-image {
-    position:absolute;
-}
 
 
 @media(prefers-reduced-motion){
@@ -106,4 +105,13 @@ body {
         border-left: 1px solid black;
     }
 
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
