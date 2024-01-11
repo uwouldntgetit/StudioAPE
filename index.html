@@ -10,9 +10,26 @@
     <link href="CSS/front-page.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <h1>Navbar</h1>
-    </div>
+    <header>
+        <nav class="navbar-container container">
+            <a onclick="redirectHome()" class="home-link">
+                <div class="navbar-title">StudioAPE</div>
+            </a>
+            <!-- this part is the hamburger -->
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" onclick="redirectServices()">Costi e Servizi</a></li>
+                    <li class="navbar-item"><a class="navbar-link" onclick="redirectFaq()">Faq</a></li>
+                    <li class="navbar-item"><a class="navbar-link" onclick="redirectContacts()">Contatti</a></li>
+                </ul>
+            </div>
+        </nav>
+   </header>
 
     <div id="front-image-container">
         <img id="front-image" src="images/ape-2015-attestato-prestazione-energetica.asp_Oit_128918-2053638897.webp">
@@ -63,9 +80,8 @@
                 <p class="price-elem-property">Property3</p>
                 <button>Scegli</button>
             </div>
-
-
         </div>
+
     </div>
     <!-- Now I'll create the contact form -->
     <div id="contact-section">
@@ -108,5 +124,6 @@
     </footer>
 
     <script src="JS/frontPage.js"></script>
+    <script src="JS/global.js"></script>
 </body>
 </html>
